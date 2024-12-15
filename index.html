@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-L4PR08V1Y9"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-L4PR08V1Y9");
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=0.9, user-scalable=no"
+        />
+        <title>Cardápio BarraChopp</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- MODAL - OCULTO -->
+        <div id="modal">
+            <div id="modal-content">
+                <span id="close-cross">X</span>
+                <img
+                    src="img/porcoes/porcao-indisponivel.png"
+                    id="modal-image"
+                    alt=""
+                />
+                <span id="modal-close">Voltar</span>
+            </div>
+        </div>
+        <!-- FIM DO MODAL -->
+        <!-- INICIO DOS MODELOS - OCULTO -->
+        <div class="model">
+            <ul>
+                <li class="porcao--item">
+                    <div class="porcao--wrapper">
+                        <div class="porcao--info">
+                            <div class="porcao--upper--info">
+                                    
+                                <h3 class="description">--</h3>
+
+                            </div>   
+                            <div class="porcao--bottom--info">
+                                <div>
+                                    <div class="porcDesc">
+                                        <p class="desc_p">--</p>
+                                    </div>
+                                </div>
+                                   
+                                <div class="porcao--bottom--info">
+                                    <div class="porcao--wrapper--bottom">
+                                        <i class="spotlight">--</i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="right--wrapper">
+                            <div class="size_price">
+                                <strong class="price">--</strong>
+                            </div>
+                            <div class="image modalIcon imageChopp" id="openModal">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                </li>
+                <li id="combo" class="combo--item">
+                    <div class="combo--wrapper">
+                        <div class="combo--info">
+                            <h3 class="description">--</h3>
+                            <i class="sub-description">--</i>
+                            <div>
+                                <div class="comboDesc">
+                                    <p class="desc_p">--</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="combo--wrapper--bottom">
+                        <div class="size_price">
+                            <strong class="price">--</strong>
+                        </div>
+                        <div class="image colonia modalIcon imageChopp" id="openModal">
+                        </div>
+                    </div>
+                </li>
+                <li class="drink--item">
+                    <div class="alc--wrapper">
+                        <div class="drink_name">
+                            <div class="alc--upper--info">
+                                <div class="name-button">
+                                    <h3 class="description">--</h3>
+                                </div>
+                            </div>
+                            <div class="alc--bottom--info">
+                                <div class="desc_p">--</div>
+                                <div class="size_price">
+                                    <strong class="price">--</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right--wrapper">
+                        <div class="image modalIcon imageChopp" id="openModal">
+                        </div>
+                    </div>
+                </li>
+                <li class="no-alc--item">
+                    <!--
+                    <div class="no-alc--wrapper">
+                        <div class="drink_name">
+                            <div class="name-button">
+                                <h3 class="description">--</h3>
+                            </div>
+                            <div class="desc_p">--</div>
+                            <div class="size_price">
+                                <div class="filll"></div>
+                                <strong class="price">--</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right--wrapper">
+                        <div class="image modalIcon imageChopp" id="openModal">
+                        </div>
+                    </div>
+                    -->
+                    <div class="no-alc--wrapper">
+                        <div class="drink_name">
+                            <div class="alc--upper--info">
+                                <div class="name-button">
+                                    <h3 class="description">--</h3>
+                                    <i class="sub-description">--</i>
+                                </div>
+                            </div>
+                            <div class="alc--bottom--info">
+                                <div class="desc_p">--</div>
+                                <div class="size_price">
+                                    <strong class="price">--</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right--wrapper">
+                        <div class="image modalIcon imageChopp" id="openModal">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- FIM DOS MODELOS - OCULTO -->
+        <!-- INICIO DO CARDAPIO -->
+        <header>
+            <div class="logo">
+                <a href="https://www.instagram.com/quiosquebarrachopp/" target="_blank">
+                    <img src="img/logo.png" />
+                </a>
+            </div>
+            <div class="cabecalho">
+                <h1>QUIOSQUE<br />BARRA<span>CHOPP</span></h1>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slider--width" id="slider--width">
+                <div
+                    class="slider--item"
+                    style="background-image: url('img/banner/banner01.png')"
+                ></div>
+                <div
+                    class="slider--item"
+                    style="background-image: url('img/banner/banner02.png')"
+                ></div>
+                <div
+                    class="slider--item"
+                    style="background-image: url('img/banner/banner03.png')"
+                ></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="tab">
+                <div class="show" id="chopps" onclick="choppsTab()">
+                    <h2>Chopps</h2>
+                </div>
+                <div class="show selected" id="porcoes" onclick="porcoesTab()">
+                    <h2>Porções</h2>
+                </div>
+                <div class="show" id="combos" onclick="combosTab()">
+                    <h2>Combos</h2>
+                </div>
+                <div class="show" id="drinks" onclick="drinksTab()">
+                    <h2>Drinks</h2>
+                </div>
+            </div>
+            <div class="showItens">
+                
+                <ul class="showChopps" id="showChopps"">
+
+                    <!-- COLONIA -->
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Chopp Pilsen<br />Colônia
+                                </h3>
+                                <div class="desc">
+                                    Chopp <b>Claro</b> e <b>Suave</b>.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price">
+                                    <p class="size">400ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 12,00 </strong>
+                                </div>
+                                <div class="size_price">
+                                    <p class="size">600ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 18,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image colonia imageChopp">
+                            <div class="brandLogo">
+                                <img src="img/brandLogo/1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- BRAHMA -->
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Chopp Pilsen<br />Brahma
+                                </h3>
+                                <div class="desc">
+                                    Chopp <b>Claro</b> e <b>Suave</b>.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price">
+                                    <p class="size">400ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 12,00 </strong>
+                                </div>
+                                <div class="size_price">
+                                    <p class="size">600ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 18,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image hop imageChopp">
+                            <div class="brandLogo">
+                                <img src="img/brandLogo/2.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                    <!-- GERMAN PILSEN -->
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Chopp Colorado<br />Ribeirão Lager
+                                </h3>
+                                <div class="desc">
+                                    Chopp <b>Lager Frutado</b>.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price">
+                                    <p class="size">400ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 13,00 </strong>
+                                </div>
+                                <div class="size_price">
+                                    <p class="size">600ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 20,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image ribeirao imageChopp">
+                           
+                        </div>
+                    </li>
+
+                    <!-- STELLA ARTOIS -->
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Chopp Lager<br />Stella Artois
+                                </h3>
+                                <div class="desc">
+                                    Chopp <b>Lager Puro Malte Encorpado</b>.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price">
+                                    <p class="size">400ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 13,00 </strong>
+                                </div>
+                                <div class="size_price">
+                                    <p class="size">600ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 20,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image petra imageChopp">
+                            <div class="brandLogo">
+                                <img src="img/brandLogo/9.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- VINHO -->
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Chopp de Vinho<br />Brasser
+                                </h3>
+                                <div class="desc">
+                                    Chopp <b>Adocicado</b> sabor <b>Vinho</b>.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price">
+                                    <p class="size">400ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 15,00 </strong>
+                                </div>
+                                <div class="size_price">
+                                    <p class="size">600ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 23,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image vinho imageChopp">
+                            <div class="brandLogo">
+                                <img src="img/brandLogo/5.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- HOP LAGER -->
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Chopp Hop Lager<br />Louvada
+                                </h3>
+                                <div class="desc">
+                                    Chopp <b>Amargo e Encorpado</b>.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price">
+                                    <p class="size">400ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 14,00 </strong>
+                                </div>
+                                <div class="size_price">
+                                    <p class="size">600ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 22,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image hop imageChopp">
+                            <div class="brandLogo">
+                                <img src="img/brandLogo/6.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                   
+                    <!-- IPA -->
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Chopp IPA<br />Brasser
+                                </h3>
+                                <div class="desc">
+                                    Chopp <b>Amargo e Encorpado</b>.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price">
+                                    <p class="size">400ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 14,00 </strong>
+                                </div>
+                                <div class="size_price">
+                                    <p class="size">600ml</p>
+                                    <div class="fill-chopp">
+                                        ..............................................................
+                                    </div>
+                                    <strong class="size">R$ 22,00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image ipa imageChopp">
+                            <div class="brandLogo">
+                                <img src="img/brandLogo/4.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul id="showPorcoes">
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="chopp_name">
+                                <h3 class="description">
+                                    Batata Frita
+                                </h3>
+                                <div class="desc">
+                                    Deliciosa porção de Batatas Fritas.
+                                </div>
+                            </div>
+                            <div class="sizenprice">
+                                <div class="size_price porc-price">
+                                    <p class="size flex-2">Simples</p>
+                                    <div class="fill-chopp flex-1">
+                                        ........................................................................................................................................................................................................................................................................
+                                    </div>
+                                    <strong class="size flex-2">R$ 24,99 </strong>
+                                </div>
+                                
+                                <div class="size_price porc-price">
+                                    <p class="size flex-2">Espec. com Calabresa</p>
+                                    <div class="fill-chopp flex-1">
+                                        ........................................................................................................................................................................................................................................................................
+                                    </div>
+                                    <strong class="size flex-2">R$ 34,99 </strong>
+                                </div>
+                                
+                                <div class="size_price porc-price">
+                                    <p class="size">Espec. com Bacon</p>
+                                    <div class="fill-chopp">
+                                        ........................................................................................................................................................................................................................................................................
+                                    </div>
+                                    <strong class="size">R$ 39,99 </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image fritas imageChopp">
+                        </div>
+                    </li>
+                    <li class="chopp--item">
+                        <div class="chopp--info">
+                            <div class="sizenprice">
+                                <div class="chopp_name">
+                                    <h3 class="description">
+                                        Tábua de Frios
+                                    </h3>
+                                    <div class="desc">
+                                        Salaminho, ovo de codorna, pepininho, mussarela, tomate, presunto, azeitona e palmito.
+                                    </div>
+                                </div>
+                                    <div class="size_price porc-price">
+                                        <p class="size flex-2">Tábua pequena</p>
+                                        <div class="fill-chopp flex-1">
+                                            ........................................................................................................................................................................................................................................................................
+                                        </div>
+                                        <strong class="size flex-1">R$ 54,99</strong>
+                                    </div>
+                                    <div class="size_price porc-price">
+                                        <p class="size flex-2">Tábua grande</p>
+                                        <div class="fill-chopp flex-1">
+                                            ........................................................................................................................................................................................................................................................................
+                                        </div>
+                                        <strong class="size flex-2">R$ 79,99</strong>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="image frios imageChopp">
+                            <div class="brandLogo">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul id="showCombos">
+                    
+                </ul>
+
+                <div id="showDrinks">
+                    <ul id="alc">
+
+                    </ul>
+                    <ul id="noAlc">
+
+                    </ul>
+                </div>
+        </div>
+        <!-- Outras seções do cardápio aqui -->
+        <!-- Seção de rodapé aqui -->
+        <footer id="footer">
+            <div><h2 class="footer">QUIOSQUE BARRACHOPP</h2></div>
+            <div>
+              <p class="p-head">Av. Min. João Alberto, 2077 Centro<br>Barra do Garças MT, 78600-000, Piso 2</p>
+              <a class="bcs" href="https://www.instagram.com/barracentershopping/">Barra Center Shopping</a>
+              <p>66 98431-1733 - quiosquebchopp@gmail.com</p>
+              <p>BARRACHOPP Delivery - 66 98437-3181</p>
+            </div>
+            <div>
+              <P id="rights">Todos os direitos reservados <br> © BARRACHOPP</P>
+              <p id="design">Designed by <a class="design" href="https://api.whatsapp.com/send?phone=5521965222389" target="_blank">Wess</a> </p>
+            </div>
+        
+          </footer>
+
+
+
+
+        <script src="assets/javascript/produtos.js"></script>
+        <script src="assets/javascript/script3.0.js"></script>
+
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+      
+            <script>
+      
+              const toTop = document.querySelector(".to-top");
+      
+                window.addEventListener("scroll", () => {
+                  if (window.pageYOffset > 100) {
+                  toTop.classList.add("active");
+                } else {
+                  toTop.classList.remove("active");
+                }
+                })
+            </script>
+
+
+
+    </body>
+</html>
