@@ -12,6 +12,27 @@ var combosArea = document.getElementById('showCombos');
 var drinksArea = document.getElementById('showDrinks');
 
 
+// SLIDE VARIAVEL NO BANNER
+
+// verifica o dia
+const day = new Date().getDate();
+
+// imagens dinamicas
+const dynamicImagesOdd = 
+["url('../img/banner/dinamic1.png')",
+"url('../img/banner/dinamic2.png')"];
+
+const dynamicImagesEven = 
+["url('../img/banner/dinamic3.png')",
+"url('../img/banner/dinamic4.png')"];
+
+// Seleciona as imagens conforme a paridade
+const selectedImages = day % 2 === 0 ? dynamicImagesEven : dynamicImagesOdd
+
+// aplica dinamicamente o background
+document.getElementById('dynamic-slider-1').style.backgroundImage = selectedImages[0];
+document.getElementById('dynamic-slider-2').style.backgroundImage = selectedImages[1];
+
 function removeSelected() {  
   tabPorcoes.classList.remove('selected');
   tabCombos.classList.remove('selected');
